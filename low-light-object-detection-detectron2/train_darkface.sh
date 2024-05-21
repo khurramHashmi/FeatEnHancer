@@ -1,0 +1,1 @@
+python train_darkface.py --config-file configs/darkface_config.yaml --num-gpus 2  

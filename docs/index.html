@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="R2L">
+  <meta name="keywords" content="Neural Light Field, distillation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FeatEnHancer</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">FeatEnHancer: Enhancing Hierarchical Features for Object Detection and Beyond Under Low-Light Vision</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://khurramhashmi.github.io/">Khurram Azeem Hashmi</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/gouthamkallempudi">Goutham Kallempudi</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://av.dfki.de/members/stricker/">Didier Stricker</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/mindgarage-shan">Muhammad Zeshan Afzal</a><sup>1,2</sup>,
+              </span>
+            </div>
+            <h1 style="font-size:23px;font-weight:bold">ICCV 2023 </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>DFKI,</span>
+              <span class="author-block"><sup>2</sup> RPTU Kaiserslautern-Landau </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- CVF Link. -->
+                <span class="link-block">
+                  <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Hashmi_FeatEnHancer_Enhancing_Hierarchical_Features_for_Object_Detection_and_Beyond_Under_ICCV_2023_paper.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </span>
+                    <span>CVF Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://openaccess.thecvf.com/content/ICCV2023/supplemental/Hashmi_FeatEnHancer_Enhancing_Hierarchical_ICCV_2023_supplemental.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </span>
+                    <span>Supplementary Material</span>
+                  </a>
+                </span>
+                 <!-- arXiv Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2308.03594" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/khurramHashmi/FeatEnHancer"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Hugginface Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/ma-xu/Context-Cluster"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      🤗
+                    </span>
+                    <span>Hugginface space</span>
+                  </a>
+                </span> -->
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div align="center" style="display: flex; justify-content: center;">
+          <img src="../assets/enhanced_representation.gif" width="500px" style="margin-right: 10px;">
+          <img src="../assets/Exdark-Gif.gif" width="500px" >
+        </div>
+        <div class="content has-text-centered">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            Extracting useful visual cues for the downstream tasks is especially challenging under low-light vision. Prior works create enhanced representations by either correlating visual quality with machine perception or designing illumination-degrading transformation methods that require pre-training on synthetic datasets. We argue that optimizing enhanced image representation pertaining to the loss of the downstream task can result in more expressive representations. Therefore, in this work, we propose a novel module, FeatEnHancer, that hierarchically combines multiscale features using multi-headed attention guided by task-related loss function to create suitable representations. Furthermore, our intra-scale enhancement improves the quality of features extracted at each scale or level, as well as combines features from different scales in a way that reflects their relative importance for the task at hand. FeatEnHancer is a general-purpose plug-and-play module and can be incorporated into any low-light vision pipeline. We show with extensive experimentation that the enhanced representation produced with FeatEnHancer significantly and consistently improves results in several dark vision tasks, including dark object detection (+5.7 mAP on ExDark), face detection (+1.5 mAP on DARK FACE), nighttime semantic segmentation (+5.1 mIoU on ACDC ), and video object detection (+1.8 mAP on DarkVision), highlighting the effectiveness of enhancing hierarchical features under low-light vision.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <section class="hero teaser">
+    <div class="container is-max-desktop">
+       <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+      <h2 class="title is-3">Method Overview</h2>
+      <div class="hero-body">
+        <div align="center"> <img src="../assets/featenhancer.jpg" width="850px"> </div>
+        <div class="content has-text-centered">
+          Network architecture of the proposed FeatEnHancer employed in a downstream vision task.
+          Our FeatEnHancer takes a low-light image and adaptively boosts its semantic representation by enriching task-related hierarchical features.
+        </div>
+      </div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@InProceedings{Hashmi_2023_ICCV,
+    author    = {Hashmi, Khurram Azeem and Kallempudi, Goutham and Stricker, Didier and Afzal, Muhammad Zeshan},
+    title     = {FeatEnHancer: Enhancing Hierarchical Features for Object Detection and Beyond Under Low-Light Vision},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {6725-6735}
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div align="center" class="container">
+      <div class="columns is-centered">
+        <div class="content">
+          This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
