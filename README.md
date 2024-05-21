@@ -13,7 +13,7 @@
 <div align="center">
   <table>
       <td>
-        <img src="assets/enhanced_representation.gif" height="800">
+        <img src="docs/assets/enhanced_representation.gif" height="800">
       </td>
   </table>
 </div>
