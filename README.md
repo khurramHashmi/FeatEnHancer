@@ -9,7 +9,7 @@
 <h1>[ICCV 2023] FeatEnHancer: Enhancing Hierarchical Features for Object Detection and Beyond Under Low-Light Vision</h1>
 
 -----
-### Complete Process from Low-light input to final prediction.
+### Enhancing representation of a low-light image.
 <div align="center">
   <table>
       <td>
