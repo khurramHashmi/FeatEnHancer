@@ -119,7 +119,7 @@ class FeatEnHancer(nn.Module):
         self.quarter_conv = nn.Conv2d(in_channels, in_channels, 7, 4)
         self.hexa_conv = nn.Conv2d(in_channels, in_channels, 3, 2)
 
-        self.scale_aware_aggregation = ScaleAwareFeatureAggregation(channels=32).to('cuda')
+        self.scale_aware_aggregation = ScaleAwareFeatureAggregation(channels=24).to('cuda')
 
 
     def forward(self, x):
