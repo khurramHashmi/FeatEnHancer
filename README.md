@@ -22,7 +22,7 @@
 
 ## Installation
 
-Please refer to [low-light-object-detection-detectron2](https://github.com/khurramHashmi/FeatEnHancer_ICCV/tree/main/low-light-object-detection-detectron2#readme) for installation requirements
+Please refer to [low-light-object-detection-detectron2](https://github.com/khurramHashmi/FeatEnHancer/tree/main/low-light-object-detection-detectron2#readme) for installation requirements
 
 ## Datasets
 
